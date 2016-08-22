@@ -1,12 +1,13 @@
-﻿namespace autofac_tests
+﻿namespace AutofacTests
 {
     using System;
     using System.Diagnostics;
-    using System.Reactive.Concurrency;
     using System.Reactive.Linq;
-    using System.Threading;
 
     using Autofac;
+
+    using AutofacTests.Ping;
+    using AutofacTests.Ping.Providers;
 
     public class Program
     {

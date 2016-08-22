@@ -7,8 +7,8 @@
     <ProjectGuid>{DA782EFF-64B7-4629-9572-A47CFCBA4A6E}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>autofac_tests</RootNamespace>
-    <AssemblyName>autofac-tests</AssemblyName>
+    <RootNamespace>AutofacTests</RootNamespace>
+    <AssemblyName>AutofacTests</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

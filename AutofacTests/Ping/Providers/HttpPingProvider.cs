@@ -1,14 +1,14 @@
-namespace autofac_tests
+namespace AutofacTests.Ping.Providers
 {
     using System;
 
-    public class DatabasePingProvider : IPingProvider
+    public class HttpPingProvider : IPingProvider
     {
         private static readonly Random rnd = new Random(Environment.TickCount);
         public Func<Uri, bool> Ping { get; } = uri =>
         {
             var next = rnd.NextBool(40);
-            Console.WriteLine($"[DatabasePingProvider] - [{next}]");
+            Console.WriteLine($"[HttpPingProvider] - [{next}]");                             
             return next;
         };
     }

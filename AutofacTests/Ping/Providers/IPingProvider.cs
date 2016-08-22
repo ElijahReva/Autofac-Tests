@@ -1,4 +1,4 @@
-﻿namespace autofac_tests
+﻿namespace AutofacTests.Ping.Providers
 {
     using System;
 

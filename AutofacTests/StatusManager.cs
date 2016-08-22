@@ -1,13 +1,13 @@
-﻿namespace autofac_tests
+﻿namespace AutofacTests
 {
     using System;
     using System.Collections.Concurrent;
-    using System.Dynamic;
     using System.Linq;
-    using System.Reactive.Linq;
     using System.Threading;
 
     using Autofac.Features.Indexed;
+
+    using AutofacTests.Ping;
 
     public class StatusManager
     {
@@ -34,9 +34,9 @@
             while (true)
             {
                 Thread.Sleep(3456);
-                lock (statuses)
+                lock (this.statuses)
                 {
-                    foreach (var checker in statuses.Keys)
+                    foreach (var checker in this.statuses.Keys)
                     {
                         var newStatus = this.chekers[checker].IsOnline();
                         if (this.statuses[checker] == newStatus)

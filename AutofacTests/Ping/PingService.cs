@@ -1,9 +1,11 @@
-namespace autofac_tests
+namespace AutofacTests.Ping
 {
     using System;
     using System.Configuration;
     using System.Linq;
     using System.ServiceModel.Configuration;
+
+    using AutofacTests.Ping.Providers;
 
     public class PingService<TChecker, TService> : IPingService
         where TChecker : IPingProvider
